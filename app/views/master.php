@@ -35,7 +35,7 @@
                 <div class="nav_list">
                     
                     <!-- produtos -->
-                    <a href="/produtos" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Produtos</span> </a>
+                    <a href="/produto" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Produtos</span> </a>
                     <!-- usuarios --> 
                     <a href="#" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> 
                     <!-- -->
