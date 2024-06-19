@@ -18,6 +18,9 @@
     <!-- javascript da sidebar -->
     <script src="../js/sidebarscript.js"></script>
 
+    <!-- ion-icons -->
+
+
     <title>Yuri TecOP</title>
 </head>
 
@@ -57,5 +60,11 @@
     </div>
     <!--Container Main end-->
     
+
+
+    <!--ion-icons biblioteca de icones-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>

@@ -28,9 +28,10 @@ $router = [
   "GET" => [
     "/" => fn () => load("HomeController", "index"),
     "/produto" => fn () => load("ProdutoController", "index"),
+    "/cadastrarProduto" => fn () => load("ProdutoController", "cadastrarProduto"),
   ],
   "POST" => [
-    "/" => fn () => load("", "store"),
+    "/cadastrarProduto" => fn () => load("ProdutoController", "store"),
   ],
 ];
          

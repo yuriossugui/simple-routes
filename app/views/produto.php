@@ -1,7 +1,7 @@
 <?php $this->layout("master"); ?>
 
 <h1 id="tituloHome">ACOMPANHAMENTO DOS PRODUTOS</h1>
-<button class="btn btn-primary" id="botaoCadProduto">Cadastrar</button>
+<a href="/cadastrarProduto"><button class="btn btn-primary" id="botaoCadProduto">Cadastrar</button></a>
 <table class="table table-hover table-bordered table-striped">
     <thead>
         <tr>
@@ -23,6 +23,8 @@
                 <td><?php echo htmlspecialchars($produto['variacao']);?></td>
                 <td><?php echo htmlspecialchars($produto['descricao']);?></td>
                 <td><?php echo htmlspecialchars($produto['tipo']);?></td>
+                <td><a href=""><ion-icon name="create" size="large"></ion-icon></a></td>
+                <td><a href=""><ion-icon name="trash" size="large"></ion-icon></a></td>
             </tr>
             <?php endforeach;?>
         <?php else: ?>

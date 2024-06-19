@@ -20,8 +20,16 @@ class ProdutoModel {
   }
 
   public function selecionarTodos() {
-    $stmt = $this->db->query('SELECT * FROM produto');
-    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    if(!$this->db){
+      $this->db = self::getConexao();
+    }
+
+    if($this->db){
+      $stmt = $this->db->query('SELECT * FROM produto');
+      return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }else{
+      return null;
+    }
   }
 
   private $id;
